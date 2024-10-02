@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Smith</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<body class="bg-stone-50/10">
+  
+  <nav id="navbar" class="h-[120px] flex justify-center items-center fixed w-full bg-transparent transition-colors duration-100 ease-in-out z-50">
+    <div class="max-w-screen-xl w-full flex justify-between items-center px-5 md:px-10">
+      <!-- Logo -->
+      <div class="flex gap-2 items-center">
+        <div class="bg-green-600/65 w-12 h-12 rounded-full flex items-center justify-center text-center font-extrabold text-white text-3xl">
+          <p class="h-10">A</p>
+        </div>
+        <h1 class="text-xl text-zinc-800">
+          <b>Alex</b> Smith
+        </h1>
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-400 hover:text-gray-800 transition duration-150 cursor-pointer focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navbar Items (Hidden by default on mobile) -->
+      <ul id="menu" class="hidden md:flex gap-12 transition-all duration-300">
+        <li class="text-gray-400 hover:text-[#3b3b3b] transition duration-150 cursor-pointer">About Me</li>
+        <li class="text-gray-400 hover:text-[#3b3b3b] transition duration-150 cursor-pointer">Resume</li>
+        <li class="text-gray-400 hover:text-[#3b3b3b] transition duration-150 cursor-pointer">Blog</li>
+        <li class="text-gray-400 hover:text-[#3b3b3b] transition duration-150 cursor-pointer">Contact</li>
+      </ul>
+    </div>
+    
+    <!-- Dropdown Menu (Mobile) -->
+    <div id="mobile-menu" class="md:hidden fixed top-[120px] left-0 w-full bg-white hidden transition-all duration-300 shadow-lg">
+      <ul class="flex flex-col items-center gap-5 p-5">
+        <li class="text-gray-600 hover:text-[#3b3b3b] transition duration-150 cursor-pointer">About Me</li>
+        <li class="text-gray-600 hover:text-[#3b3b3b] transition duration-150 cursor-pointer">Resume</li>
+        <li class="text-gray-600 hover:text-[#3b3b3b] transition duration-150 cursor-pointer">Blog</li>
+        <li class="text-gray-600 hover:text-[#3b3b3b] transition duration-150 cursor-pointer">Contact</li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Home -->
+  <section class="w-full h-[100vh] flex flex-col lg:flex-row gap-12 justify-center items-center">
+    <div class="md:w-80 md:h-80 h-64 w-64 p-4 rounded-full shadow-[0px_0px_30px_rgba(0,_0,_0,_0.1)]">
+      <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="w-full h-full rounded-full object-cover">
+    </div>
+    <div class="flex flex-col text-center lg:text-start px-5">
+      <h3 class="text-md text-gray-400">Frontend-developer</h3>
+      <h2 class="text-5xl font-bold text-zinc-800 mb-5 mt-1">Alex Smith</h2>
+      <p class="max-w-[550px] text-md text-zinc-500">Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien pretium eu.</p>
+    
+      <div class="flex lg:justify-start justify-center gap-3 mt-5">
+        <button class="py-2 px-6 rounded-full text-zinc-600 border-2 border-green-400 hover:bg-green-400 hover:text-white shadow-lg transition duration-400">Downloand CV</button>
+        <button class="py-2 px-6 rounded-full text-zinc-600 border-2 border-gray-300 hover:bg-gray-300 shadow-lg transition duration-400">Contact</button>
+      </div>
+    </div>
+  </section>
+
+<!-- What I do -->
+<section class="flex justify-center items-center w-full">
+  <div class="max-w-screen-xl w-full flex flex-col px-5 md:px-10">
+<div>
+  <p class="text-2xl text-zinc-800 font-bold">What I Do</p>
+  <div class="bg-gray-200 h-[2px] w-28 mt-1">
+    <div class="bg-green-500 h-[2px]" style="width: 30%"></div>
+  </div>
+</div>
+<div class="mt-10 grid md:grid-cols-2 grid-cols-1 gap-10">
+
+  <div class="flex gap-5">
+    <svg class="text-green-600 w-20 sm:flex hidden" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="currentColor" d="M62.828,12.482L51.514,1.168c-1.562-1.562-4.093-1.562-5.657,0.001c0,0-44.646,44.646-45.255,45.255 C-0.006,47.031,0,47.996,0,47.996l0.001,13.999c0,1.105,0.896,2,1.999,2.001h4.99c0.003,0,9.01,0,9.01,0s0.963,0.008,1.572-0.602 s45.256-45.257,45.256-45.257C64.392,16.575,64.392,14.046,62.828,12.482z M37.356,12.497l3.535,3.536L6.95,49.976l-3.536-3.536 L37.356,12.497z M8.364,51.39l33.941-33.942l4.243,4.243L12.606,55.632L8.364,51.39z M3.001,61.995c-0.553,0-1.001-0.446-1-0.999 v-1.583l2.582,2.582H3.001z M7.411,61.996l-5.41-5.41l0.001-8.73l14.141,14.141H7.411z M17.557,60.582l-3.536-3.536l33.942-33.94 l3.535,3.535L17.557,60.582z M52.912,25.227L38.771,11.083l2.828-2.828l14.143,14.143L52.912,25.227z M61.414,16.725l-4.259,4.259 L43.013,6.841l4.258-4.257c0.782-0.782,2.049-0.782,2.829-0.002l11.314,11.314C62.195,14.678,62.194,15.943,61.414,16.725z"></path> </g></svg>
+    <div>
+       <h4 class="font-bold text-zinc-800 mb-1">Copywrite</h4>
+    <p class="text-zinc-600 text-sm">Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
+    </div>
+  </div>
+
+  <div class="flex gap-5">
+    <svg class="text-green-600 w-20 sm:flex hidden" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="currentColor" d="M62.828,12.482L51.514,1.168c-1.562-1.562-4.093-1.562-5.657,0.001c0,0-44.646,44.646-45.255,45.255 C-0.006,47.031,0,47.996,0,47.996l0.001,13.999c0,1.105,0.896,2,1.999,2.001h4.99c0.003,0,9.01,0,9.01,0s0.963,0.008,1.572-0.602 s45.256-45.257,45.256-45.257C64.392,16.575,64.392,14.046,62.828,12.482z M37.356,12.497l3.535,3.536L6.95,49.976l-3.536-3.536 L37.356,12.497z M8.364,51.39l33.941-33.942l4.243,4.243L12.606,55.632L8.364,51.39z M3.001,61.995c-0.553,0-1.001-0.446-1-0.999 v-1.583l2.582,2.582H3.001z M7.411,61.996l-5.41-5.41l0.001-8.73l14.141,14.141H7.411z M17.557,60.582l-3.536-3.536l33.942-33.94 l3.535,3.535L17.557,60.582z M52.912,25.227L38.771,11.083l2.828-2.828l14.143,14.143L52.912,25.227z M61.414,16.725l-4.259,4.259 L43.013,6.841l4.258-4.257c0.782-0.782,2.049-0.782,2.829-0.002l11.314,11.314C62.195,14.678,62.194,15.943,61.414,16.725z"></path> </g></svg>
+    <div>
+       <h4 class="font-bold text-zinc-800 mb-1">Copywrite</h4>
+    <p class="text-zinc-600 text-sm">Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
+    </div>
+  </div>
+
+  <div class="flex gap-5">
+    <svg class="text-green-600 w-20 sm:flex hidden" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="currentColor" d="M62.828,12.482L51.514,1.168c-1.562-1.562-4.093-1.562-5.657,0.001c0,0-44.646,44.646-45.255,45.255 C-0.006,47.031,0,47.996,0,47.996l0.001,13.999c0,1.105,0.896,2,1.999,2.001h4.99c0.003,0,9.01,0,9.01,0s0.963,0.008,1.572-0.602 s45.256-45.257,45.256-45.257C64.392,16.575,64.392,14.046,62.828,12.482z M37.356,12.497l3.535,3.536L6.95,49.976l-3.536-3.536 L37.356,12.497z M8.364,51.39l33.941-33.942l4.243,4.243L12.606,55.632L8.364,51.39z M3.001,61.995c-0.553,0-1.001-0.446-1-0.999 v-1.583l2.582,2.582H3.001z M7.411,61.996l-5.41-5.41l0.001-8.73l14.141,14.141H7.411z M17.557,60.582l-3.536-3.536l33.942-33.94 l3.535,3.535L17.557,60.582z M52.912,25.227L38.771,11.083l2.828-2.828l14.143,14.143L52.912,25.227z M61.414,16.725l-4.259,4.259 L43.013,6.841l4.258-4.257c0.782-0.782,2.049-0.782,2.829-0.002l11.314,11.314C62.195,14.678,62.194,15.943,61.414,16.725z"></path> </g></svg>
+    <div>
+       <h4 class="font-bold text-zinc-800 mb-1">Copywrite</h4>
+    <p class="text-zinc-600 text-sm">Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
+    </div>
+  </div>
+
+  <div class="flex gap-5">
+    <svg class="text-green-600 w-20 sm:flex hidden" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="currentColor"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="currentColor" d="M62.828,12.482L51.514,1.168c-1.562-1.562-4.093-1.562-5.657,0.001c0,0-44.646,44.646-45.255,45.255 C-0.006,47.031,0,47.996,0,47.996l0.001,13.999c0,1.105,0.896,2,1.999,2.001h4.99c0.003,0,9.01,0,9.01,0s0.963,0.008,1.572-0.602 s45.256-45.257,45.256-45.257C64.392,16.575,64.392,14.046,62.828,12.482z M37.356,12.497l3.535,3.536L6.95,49.976l-3.536-3.536 L37.356,12.497z M8.364,51.39l33.941-33.942l4.243,4.243L12.606,55.632L8.364,51.39z M3.001,61.995c-0.553,0-1.001-0.446-1-0.999 v-1.583l2.582,2.582H3.001z M7.411,61.996l-5.41-5.41l0.001-8.73l14.141,14.141H7.411z M17.557,60.582l-3.536-3.536l33.942-33.94 l3.535,3.535L17.557,60.582z M52.912,25.227L38.771,11.083l2.828-2.828l14.143,14.143L52.912,25.227z M61.414,16.725l-4.259,4.259 L43.013,6.841l4.258-4.257c0.782-0.782,2.049-0.782,2.829-0.002l11.314,11.314C62.195,14.678,62.194,15.943,61.414,16.725z"></path> </g></svg>
+    <div>
+       <h4 class="font-bold text-zinc-800 mb-1">Copywrite</h4>
+    <p class="text-zinc-600 text-sm">Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis turpis tempus ex.</p>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
+
+
+<section class="mt-20 flex justify-center items-center w-full">
+  <div class="container mx-auto px-6 max-w-screen-xl w-full flex flex-col">
+    <div>
+      <p class="text-2xl text-zinc-800 font-bold">Testimonials</p>
+      <div class="bg-gray-200 h-[2px] w-36 mt-1">
+        <div class="bg-green-500 h-[2px]" style="width: 30%"></div>
+      </div>
+    </div>
+    <!-- Testimonials Container -->
+    <div class="relative w-full mt-5">
+      <!-- Slider Wrapper -->
+      <div id="testimonial-slider" class="overflow-hidden relative">
+        <div id="testimonial-wrapper" class="flex transition-transform duration-700 ease-in-out">
+          <!-- Testimonial 1 -->
+          <div class="w-full p-5 text-center bg-white border-2 border-gray-200 rounded-lg shadow-md flex-shrink-0">
+            <p class="text-lg text-gray-600 italic mb-4">"Alex's work is exceptional! His attention to detail and creativity is unmatched."</p>
+            <div class="flex justify-center items-center mt-4">
+              <img class="w-12 h-12 rounded-full object-cover" src="https://th-thumbnailer.cdn-si-edu.com/5a79C6jJ8BrChMX5tgEKiMI_qqo=/1000x750/filters:no_upscale():focal(792x601:793x602)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/52/e4/52e44474-c2dc-41e0-bb77-42a904695196/this-image-shows-a-portrait-of-dragon-man-credit-chuang-zhao_web.jpg" alt="Client 1">
+              <div class="ml-3">
+                <h3 class="font-semibold text-lg text-gray-800">John Doe</h3>
+                <p class="text-gray-500 text-sm">CEO, Company</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="w-full p-5 text-center bg-white border-2 border-gray-200 rounded-lg shadow-md flex-shrink-0">
+            <p class="text-lg text-gray-600 italic mb-4">"Professionalism and quality are at the forefront of Alex's services."</p>
+            <div class="flex justify-center items-center mt-4">
+              <img class="w-12 h-12 rounded-full object-cover" src="https://www.theladders.com/wp-content/uploads/man_outside_091318.jpg" alt="Client 2">
+              <div class="ml-3">
+                <h3 class="font-semibold text-lg text-gray-800">Jane Smith</h3>
+                <p class="text-gray-500 text-sm">Marketing Head, Startup</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="w-full p-5 text-center bg-white border-2 border-gray-200 rounded-lg shadow-md flex-shrink-0">
+            <p class="text-lg text-gray-600 italic mb-4">"A true pleasure to work with. Highly recommend Alex for all creative projects."</p>
+            <div class="flex justify-center items-center mt-4">
+              <img class="w-12 h-12 rounded-full object-cover" src="https://img.freepik.com/free-photo/bearded-man-with-striped-shirt_273609-7180.jpg" alt="Client 3">
+              <div class="ml-3">
+                <h3 class="font-semibold text-lg text-gray-800">Sarah Johnson</h3>
+                <p class="text-gray-500 text-sm">Art Director, Creative Co.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="absolute inset-0 flex justify-between items-center px-3">
+        <button id="prev-btn" class="bg-gray-400/40 text-white p-3 rounded-full focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button id="next-btn" class="bg-gray-400/40 text-white p-3 rounded-full focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials JS -->
+<script>
+const testimonialWrapper = document.getElementById('testimonial-wrapper');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+let currentIndex = 0;
+
+// Testimonial width calculation
+const testimonials = testimonialWrapper.children;
+const totalTestimonials = testimonials.length;
+
+// Function to update the slider position
+const updateSliderPosition = () => {
+  const width = testimonials[0].offsetWidth;
+  testimonialWrapper.style.transform = `translateX(${-currentIndex * width}px)`;
+};
+
+// Function to move to the next testimonial
+const moveToNextTestimonial = () => {
+  if (currentIndex < totalTestimonials - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  updateSliderPosition();
+};
+
+// Function to move to the previous testimonial
+const moveToPreviousTestimonial = () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = totalTestimonials - 1;
+  }
+  updateSliderPosition();
+};
+
+// Set up auto-slide every 5 seconds
+let autoSlide = setInterval(moveToNextTestimonial, 5000);
+
+// Event listeners for manual navigation
+nextBtn.addEventListener('click', () => {
+  clearInterval(autoSlide); // Clear the auto-slide when user clicks manually
+  moveToNextTestimonial();
+  autoSlide = setInterval(moveToNextTestimonial, 5000); // Restart auto-slide after interaction
+});
+
+prevBtn.addEventListener('click', () => {
+  clearInterval(autoSlide); // Clear the auto-slide when user clicks manually
+  moveToPreviousTestimonial();
+  autoSlide = setInterval(moveToNextTestimonial, 5000); // Restart auto-slide after interaction
+});
+
+// Resize event to handle window size changes
+window.addEventListener('resize', updateSliderPosition);
+
+// Initial update on page load
+updateSliderPosition();
+
+</script>
+
+<!-- Navbar JS -->
+<script>
+  // Scroll event dinleyici
+  window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('navbar');
+    
+    // Scroll 80px'i geçtiyse background ekle
+    if (window.scrollY > 50) {
+      navbar.classList.add('bg-white', 'shadow-lg');
+    } else {
+      navbar.classList.remove('bg-white', 'shadow-lg');
+    }
+  });
+
+    // Hamburger Menu açma/kapama işlevi
+    const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  let menuOpen = false;
+  menuBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    if (menuOpen) {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('block');
+    } else {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('block');
+    }
+  });
+
+  
+</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
